@@ -1,15 +1,14 @@
 <div class="col-md-12">
 
-  <h2 class="text-center"> 我加入的讨论版 </h2>
+  <h2 class="text-center"> 我的电影 </h2>
 
   <table class="table">
     <thead>
       <tr>
         <th> # </th>
-        <th> Title </th>
-        <th> Description </th>
-        <th> Post Count </th>
-        <th> Last Update </th>
+        <th> 电影 </th>
+        <th> 简介 </th>
+
       </tr>
     </thead>
 
@@ -19,9 +18,8 @@
           <td> # </td>
           <td> <%= link_to(group.title, group_path(group)) %> </td>
           <td> <%= group.description %> </td>
-          <td> <%= render_group_description(group) %></td>
-          <td> <%= group.posts.count %> </td>
-          <td> <%= group.updated_at %> </td>
+        
+
         </tr>
       <% end %>
     </tbody>
